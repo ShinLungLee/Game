@@ -1,0 +1,166 @@
+html{
+  background-color: #edf2c5;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 940px;
+  max-height: 1260px;
+  margin: 0 auto 0 auto;
+}
+
+.header{
+  padding-top: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title{
+  line-height: 36px;
+  font-weight:1000;
+  font-family:Arial Black;
+  font-size:44px; 
+  font-weight: bold;
+  color:#778a50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn-display{
+  margin:auto 0 auto 0;
+  padding-left: 10px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.btn-display .acc{
+
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #778A50;
+  border-radius: 3px;
+  font-family:Arial Black;
+  color: #778A50;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.btn-bar{
+  display: flex;
+}
+
+.line{
+  height: 100%;
+  border-right:  solid #778A50 1px;
+}
+
+.acc:hover {
+  background-color:  #4c5934;
+}
+
+.nav-list-item:hover {
+  background-color:  #4c5934;
+}
+
+.nav-list{
+  position: relative;
+  display: flex;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  height: 44px;
+  background-color: #778A50;
+}
+
+.nav-list-item{
+  list-style: none;
+}
+
+.nav-list-link{
+  padding: 10px 20px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: 1000;
+  text-decoration: none;
+  color: #edf2c5;
+  display: block;
+}
+
+.img-main{
+  margin: 20px 0 0 0; 
+}
+
+.body-box{
+  background-color: #778A50;
+  width: 445px;
+  height: 45px;
+  border-radius: 3px;
+  
+}
+
+.img{
+  margin:30px 0 15px 0 ;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.body-box p{
+  line-height: 15px;
+  text-indent:35px;
+  padding-bottom: 15px;
+  font-family: Arial Black;
+  font-size: 16px;
+  color: #EDF2C5;
+}
+
+.img{
+  display:flex;
+  justify-content:space-between;
+}
+
+.contant{
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 16px;
+  line-height: 1.33em;
+  font-family: Arial;
+  font-size: 12px;
+  color:#7D7D7D;
+}
+
+.body-text{
+  height:140px;
+  width: 100%;
+  background-color:#F7FBDA;
+  margin-bottom: 35px;
+}
+
+.aside-line{
+  margin: 16px 0 0 0 ;
+  width: 414px;
+  height: 1px;
+  border-top:  solid #7D7D7D 1px;
+}
+
+.footer{
+  margin:175px auto 0 auto;
+  width:1260 px;
+  height: 60px;
+  background-color:#778A50;
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 12px;
+  color:#edf2c5;
+}
+
+.footer p{
+  margin: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+}

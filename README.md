@@ -1,2 +1,2 @@
-# GameForWebDesign
+# Game
 Mid term

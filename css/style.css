@@ -103,6 +103,7 @@ background-color:#eff3cb ;
   margin: 0 0 0 0 ;
   animation: fadeIn 3s;
   animation-timing-function: ease ;
+  z-index: -1;
 }
 
 @keyframes fadeIn {

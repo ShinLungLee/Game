@@ -11,36 +11,29 @@ html{
   top: 0;
 }
 
-
-.headerIcon{
-  width: 88px;
-  height: 88px;
-  }
-  
-.logo{
-  width: auto;
-  height: 88px;
-}
-
 .header{
   display: flex;
   justify-content: space-between;
 }
 
-.headerTitle{
-  font-size: 38px;
-  font-family:Arial Black;
-  font-weight: bold;
-  color:#464646;
-  padding: 0 0 0 0;
-  height: auto;
+.headerIcon{
+  width: 88px;
+  height: 88px;
+  }
+
+.logo{
   width: auto;
-  cursor:default;
+  height: 88px;
+  animation: scaleUp 3s;
+}
+
+@keyframes scaleUp {
+  0% { scale: 0.1; }
 }
 
 /*dropMenuStart*/
 
-.dropMenu{
+.dropMenuBtn{
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -60,7 +53,7 @@ html{
   
 }
 
-.dropMenu:hover
+.dropMenuBtn:hover
 {
   background-color: #151515;
   box-shadow: 0 0 100px rgb(255, 204, 110);
@@ -73,7 +66,6 @@ html{
   max-width: 920px;
   max-height: 1260px;
   margin: 0 auto 0 auto;
- 
 }
 
 .main{
@@ -83,8 +75,17 @@ html{
   justify-content: center;
   flex-direction: column;
 }
+
 .mainArt{
   margin: 0 0 0 0 ;
+  animation: fadeIn 3s;
+  animation-timing-function: ease ;
+}
+
+@keyframes fadeIn {
+  0% { scale: 0.9; }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .mainTextArea{
@@ -96,12 +97,14 @@ html{
   color:#e8e8e8;
   font-family:Arial Black;
   margin: 0 auto 0 auto;
+  padding-bottom: 32px;
 }
 
 .mainTitle{
   display: flex;
   justify-content: center;
-  
+  text-shadow: 0 0 7px #fff;
+
 }
 
 .mainText{
@@ -114,7 +117,8 @@ html{
 .asideContainer{
   max-width: 920px;
   max-height: 1260px;
-
+  margin: 0 auto 0 auto;
+  padding-top: 16px;
 }
 
 .aside{
@@ -156,7 +160,7 @@ html{
 
 /*footerStart*/
 .footer{
-  margin: 96px  auto 0 auto;
+  margin: 48px  auto 0 auto;
   height: 64px;
   background-color:#eff3cb;
   display: flex;
@@ -174,9 +178,32 @@ html{
 
 /*line*/
 .line{
-  margin: 32px 0 0 0 ;
-  width: auto;
-  height: 1px;
+  max-width: 1260px;
+  margin: 0 auto 0 auto;
   border-top:  solid #7D7D7D 1px;
 }
 
+/*goTop*/
+.goTopBtn {
+  position: fixed;
+  top: 0;
+  right:0;
+  height: 48px;
+  width: 48px;
+  margin-top: 88vh;
+  background-color: #eff3cb;
+  opacity: 0.7;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  font-family:Arial;
+  color: #000000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  }
+
+.goTopBtn:hover{
+  opacity: 1;
+  cursor: pointer;
+}

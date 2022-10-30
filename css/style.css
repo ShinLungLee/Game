@@ -5,7 +5,6 @@ html{
 /*headerStart*/
 .headerContainer{
   max-width: auto;
-  max-height: 88px;
   background-color: #eff3cb;
   position: sticky;
   top: 0;
@@ -60,6 +59,30 @@ html{
   cursor: pointer;
 }
 
+
+.panel{
+  display: none;
+  position: absolute;
+  height: auto;
+  width: 96px;
+  right: 20px;
+  top: 80px;
+  background-color:#eff3cb ;
+  color:#020202;
+  font-family:Arial Black;
+  cursor: pointer;
+}
+
+.pages{
+padding-left: 20px;
+background-color:#eff3cb ;
+}
+
+.pages:hover{
+  margin-left: 8px;
+}
+
+
 /*mainStart*/
 
 .mainContainer{
@@ -104,7 +127,6 @@ html{
   display: flex;
   justify-content: center;
   text-shadow: 0 0 7px #fff;
-
 }
 
 .mainText{
@@ -135,7 +157,6 @@ html{
 
 .asideArt:hover{
   scale: 1.15;
-  
 }
 
 .asideTextArea{
@@ -151,6 +172,7 @@ html{
 .asideTitle{
   display: flex;
   justify-content: center;
+  text-shadow: 0 0 7px #fff;
 }
 
 .asideText{
@@ -160,14 +182,15 @@ html{
 
 /*footerStart*/
 .footer{
-  margin: 48px  auto 0 auto;
+  margin: 64px  auto 0 auto;
   height: 64px;
   background-color:#eff3cb;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: Arial;
   font-size: 12px;
   color:#000000;
+  flex-direction: row;
 }
 
 .footer p{
@@ -176,12 +199,41 @@ html{
   justify-content: center;
 }
 
+.footerIconList{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.footerIcon{
+  max-width: 48px;
+  max-height: 48px;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.copyRight{
+  padding-top: 24px;
+  padding-right: 24px;
+  font-family: Arial;
+  font-size: 12px;
+  color:#000000;
+}
+
 /*line*/
 .line{
   max-width: 1260px;
   margin: 0 auto 0 auto;
   border-top:  solid #7D7D7D 1px;
 }
+
+.verLine{
+ margin-top: 16px;
+  height: 32px;
+  border-right:  solid #000000 1px;
+}
+
+
 
 /*goTop*/
 .goTopBtn {
@@ -201,6 +253,7 @@ html{
   color: #000000;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  
   }
 
 .goTopBtn:hover{

@@ -217,7 +217,12 @@ background-color:#eff3cb ;
   max-width: 48px;
   max-height: 48px;
   padding-left: 24px;
+}
+
+.footerIcon:hover{
   cursor: pointer;
+  padding-top: 4px;
+
 }
 
 .copyRight{

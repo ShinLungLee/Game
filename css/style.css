@@ -161,6 +161,7 @@ background-color:#eff3cb ;
 }
 
 .asideTextArea{
+  z-index: -1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -168,6 +169,12 @@ background-color:#eff3cb ;
   color:#e8e8e8;
   font-family:Arial Black;
   margin: 0 auto 0 auto;
+  animation: moveright 3s;
+}
+
+@keyframes moveright {
+  0% { padding-left: 200px; }
+  0% { opacity: 0; }
 }
 
 .asideTitle{
@@ -238,6 +245,8 @@ background-color:#eff3cb ;
 
 /*goTop*/
 .goTopBtn {
+  display: none;
+  z-index: 1;
   position: fixed;
   top: 0;
   right:0;

@@ -19,7 +19,7 @@ $(document).scroll(function () {
         $('.asideArt').fadeOut();
     }
 
-    if (y > 200) {
+    if (y > 250) {
         $('.asideTextArea').fadeIn();
     } else {
         $('.asideTextArea').fadeOut();

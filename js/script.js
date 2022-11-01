@@ -26,3 +26,6 @@ $(document).scroll(function () {
     }
 });
 
+$(".asideArt").click(function(){
+    $(".asideArt").css('red');
+});

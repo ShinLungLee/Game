@@ -67,7 +67,7 @@ html{
 .panel{
   display: none;
   position: absolute;
-  height: auto;
+  height: 60px;/*原為auto*/
   width: 96px;
   right: 20px;
   top: 88px;
@@ -81,6 +81,7 @@ html{
 .pages{
 padding-left: 20px;
 background-color:#eff3cb ;
+margin-left: 5px;/*原無*/
 }
 
 .pages:hover{
@@ -288,3 +289,68 @@ background-color:#eff3cb ;
 ::-webkit-scrollbar {
   display: none;
 }
+    /*gameprodce*/
+
+  .Img-list{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+    /*produceimg*/
+  .smallArt{
+    margin: 0 0 0 0 ;
+    width: 12%;
+    height: 12%;
+  }
+  /*login*/
+  .logcontainer{
+    display:flex;
+    max-width: 940px;
+    height: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #eff3cb;
+    flex-direction: column;
+}
+
+.logheader{
+    padding-top: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.logheader-title{
+  line-height: 36px;
+  font-weight:1000;
+  font-family:Arial Black;
+  font-size:44px; 
+  font-weight: bold;
+  color:#778a50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22%;
+
+  justify-content: center;
+}
+.rectangle{
+  line-height:1px;
+  position: relative;
+width: 320px;
+height: 30px;
+left: 310px;
+background-color: rgb(255, 255, 255);
+justify-content: center;
+}
+.logblock{
+  flex-grow: 1; /*可佔滿垂直剩餘的空間*/
+}
+html,body{  
+  height: 100%;
+  margin: 0;
+}
+.form{
+  margin-left: 360px;
+  justify-content: center;
+}
+a:link    {color:black;}
+a:visited {color:black;}

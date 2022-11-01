@@ -4,10 +4,13 @@ html{
 
 /*headerStart*/
 .headerContainer{
+  z-index: 1;
   max-width: auto;
   background-color: #eff3cb;
   position: sticky;
   top: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .header{
@@ -44,6 +47,7 @@ html{
   border: 3px solid #e8e8e8;
   border-radius: 10px;
 }
+
 .dropMenuLine{
   position: relative;
   width: 52px;
@@ -57,8 +61,8 @@ html{
   background-color: #151515;
   box-shadow: 0 0 100px rgb(255, 204, 110);
   cursor: pointer;
+  transition: 1s;
 }
-
 
 .panel{
   display: none;
@@ -66,11 +70,12 @@ html{
   height: auto;
   width: 96px;
   right: 20px;
-  top: 80px;
+  top: 88px;
   background-color:#eff3cb ;
   color:#020202;
   font-family:Arial Black;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .pages{
@@ -154,11 +159,16 @@ background-color:#eff3cb ;
   margin: 0 0 0 0 ;
   width: 50%;
   height: 50%;
+  top: 0;
 }
 
 .asideArt:hover{
-  scale: 1.15;
+  position: relative;
+  transition: 1s;
+  scale: 1.1;
 }
+
+
 
 .asideTextArea{
   z-index: -1;
@@ -190,7 +200,7 @@ background-color:#eff3cb ;
 
 /*footerStart*/
 .footer{
-  margin: 64px  auto 0 auto;
+  margin: 64px auto 0 auto;
   height: 64px;
   background-color:#eff3cb;
   display: flex;
@@ -199,12 +209,9 @@ background-color:#eff3cb ;
   font-size: 12px;
   color:#000000;
   flex-direction: row;
-}
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 
-.footer p{
-  margin: auto auto auto auto;
-  display: flex;
-  justify-content: center;
 }
 
 .footerIconList{
@@ -217,12 +224,14 @@ background-color:#eff3cb ;
   max-width: 48px;
   max-height: 48px;
   padding-left: 24px;
+  top: 0;
+  transition: top 0.2s;
 }
 
 .footerIcon:hover{
   cursor: pointer;
-  padding-top: 4px;
-
+  top:-4px;
+  position: relative;
 }
 
 .copyRight{
@@ -257,7 +266,7 @@ background-color:#eff3cb ;
   right:0;
   height: 48px;
   width: 48px;
-  margin-top: 88vh;
+  margin-top: 84vh;
   background-color: #eff3cb;
   opacity: 0.7;
   border: none;
@@ -274,4 +283,8 @@ background-color:#eff3cb ;
 .goTopBtn:hover{
   opacity: 1;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

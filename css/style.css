@@ -67,7 +67,7 @@ html{
 .panel{
   display: none;
   position: absolute;
-  height: 60px;/*原為auto*/
+  height: auto;/*原為auto*/
   width: 96px;
   right: 20px;
   top: 88px;
@@ -354,3 +354,6 @@ html,body{
 }
 a:link    {color:black;}
 a:visited {color:black;}
+
+a{text-decoration:none}
+a:hover{text-decoration:none}
